@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>student admission form</title>
 </head>
+
 <body>
     <form>
         <label>Student name</label>
@@ -12,47 +14,56 @@
 
         <br><br>
 
-        <label >Student email</label>
+        <label>Student email</label>
         <input type="email" required>
 
         <br><br>
 
-        <label >Address</label>
+        <label>Address</label>
         <br>
         <textarea rows="10"></textarea>
 
-         <br><br>
+        <br><br>
 
-         <label >Gender</label>
-         <input type="radio" value="male" name="gender">Male
-         <input type="radio" value="female" name="gender">Female
+        <label>Gender</label>
+        <input type="radio" value="male" name="gender">Male
+        <input type="radio" value="female" name="gender">Female
 
-         <br><br>
+        <br><br>
 
-         <label >Select course</label>
-         <select >
+        <label>Select course</label>
+        <select>
             <option>Mern stack development</option>
             <option>Data analytics</option>
             <option>Cloud computing</option>
             <option>Artificial intelligence</option>
             <option>Github</option>
-         </select>
+        </select>
 
-         <br><br>
-         <label>College name</label>
-         <input type="text" list="college">
-         <datalist id="college">
+        <br><br>
+        <label>College name</label>
+        <input type="text" list="college">
+        <datalist id="college">
             <option>BBD</option>
             <option>LU</option>
             <option>SRMU</option>
             <option>IU</option>
-            
-         </datalist>
-         <br><br>
+
+        </datalist>
+        <br><br>
+        <input type="checkbox">
+        <label> Accept terms and condition</label>
+        <br><br>
+        <details>
+            <summary>View terms and condition</summary>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </details>
+        <br><br>
         <button type="submit">Submit</button>
 
 
 
     </form>
 </body>
+
 </html>

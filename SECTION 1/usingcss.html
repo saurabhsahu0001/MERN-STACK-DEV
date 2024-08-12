@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using css</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p {
+            font-size: 50px;
+            color: aqua;
+            font-weight: bold;
+            text-decoration: 2px underline black;
+        }
+
+        .mytag {
+            color: blue;
+            font-size: 40px;
+        }
+        .mytag2{
+            color: red !important;
+        }
+
+        .mytag3{
+            color: grey;
+        }
+
+        #myid {
+            color: blueviolet;
+            border: 2px solid brown;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="color: black;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;text-align: center;">
+        inline css used to style indivisual tags only </h1>
+    <p class="mytag">internal css is used to style entire page at once</p>
+    <p>name selector is used to select elements by their tag name</p>
+    <h2 class="mytag mytag3">class selector are used to select by their class name</h2>
+    <h2 class="mytag">Lorem ipsum dolor sit amet.</h2>
+    <h3 id="myid">id selector is used to select element by their id name</h3>
+    <h3 class="mytag2"  id="myid" style="color: green;">Lorem ipsum dolor sit amet.</h3>
+  
+    <h2>on the basis of priorty
+        p selector
+        class selector
+        id selector
+        important selector 
+
+    </h2>
+    <button class="btn">click me</button>
+
+</body>
+
+</html>
