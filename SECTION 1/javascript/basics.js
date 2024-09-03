@@ -32,6 +32,9 @@ console.log("y:",y)
 const z=30 
 // redeclaration and reassigning is not possible
 // const z=45
+
+
+
 let num = 10
 console.log(num)
 if(true){
