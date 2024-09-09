@@ -22,7 +22,7 @@ console.log(user)
 // console.log (user.address.city)
 
 user.post = ['post1', 'post2']
-console.log(user.post["0"]);
+console.log(user.post[0]);
 
 console.log(Object.keys(user));
 console.log(Object.values(user));
@@ -129,9 +129,9 @@ console.log(brands);
 
 
 
-// const[n,n] = [234,55];
+const [n,l] = [234,55];
 
-// console.log ( `${n} added to ${n} is ${n+n}`)
+console.log ( `${n} added to ${n} is ${n+l}`)
 
 
 

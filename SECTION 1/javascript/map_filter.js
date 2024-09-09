@@ -35,14 +35,18 @@
 // const newNums2 = nms.filter (  (n) => {return n%2===0});
 // console.log(newNums2);
 
-const names2 = ['raju','pinki','ramesh','suresh','kaliya'];
-const newnames2 = names2.filter ( (n) => {return n.length>=6});
-console.log(newnames2);
+// const names2 = ['raju','pinki','ramesh','suresh','kaliya'];
+// const newnames2 = names2.filter ( (n) => {return n.length>=6});
+// console.log(newnames2);
 
 const nums2 = [2,4,7,9,16, 18,36];
 console.log(Number.isInteger(121**0.5));
-const newnums2 = nums2.filter( (n)=>{return Number.isInteger(n**0.5)});
+//or
+const newnums2 = nums2.filter( (n)=>{return  (n**0.5)});
 console.log(newnums2);
+const newnums3 = nums2.map( (n)=>{return  (n**0.5)});
+console.log(newnums3);
+
 
 
 
