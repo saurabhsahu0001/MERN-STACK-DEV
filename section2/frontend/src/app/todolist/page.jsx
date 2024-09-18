@@ -25,20 +25,20 @@ const Todolist = () => {
 
     const deleteTask = (index) => {
         console.log(index);
- 
+
         const temp = Tasklist;
         temp.splice(index, 1);
 
         setTasklist([...temp]);
     }
 
-    const completeTask = (index) =>{
+    const completeTask = (index) => {
         const temp = Tasklist;
 
         temp[index].completed = !temp[index].completed;
         setTasklist([...temp]);
     }
-     return (
+    return (
         <div>
             {/* <h3 className='text-4xl'>{count}</h3>
          <button onClick={() => {setcount(count+1); console.log(count);}}>Add count</button> */}
@@ -54,19 +54,19 @@ const Todolist = () => {
                     {
                         Tasklist.map((task, index) => {
                             return <div key={index} className='shadow mb-5 p-5 border'>
-                                
+
                                 {
                                     task.completed ? (
                                         <p className='bg-green-600 text-white font-bold px-3 w-fit rounded-full'>finished</p>
-                                    ):(
+                                    ) : (
                                         <p className='bg-yellow-600 text-white font-bold px-3 w-fit rounded-full'>pending</p>
                                     )
 
                                 }
-                                <p className={'text-lg'+ (task.completed && 'line-through')}>{task.text}</p>
+                                <p className={'text-lg' + (task.completed && 'line-through')}>{task.text}</p>
                                 <div className='flex justify-end gap-3'>
                                     <button onClick={() => { completeTask(index) }}
-                                     className='bg-blue-500 text-white py-1 px-4 rounded-full'>
+                                        className='bg-blue-500 text-white py-1 px-4 rounded-full'>
                                         {task.completed ? 'undo' : 'complete'}</button>
                                     <button onClick={() => { deleteTask(index) }}
                                         className='bg-red-500 text-white  py-1 px-4 rounded-full'>Delete</button>
@@ -82,3 +82,4 @@ const Todolist = () => {
 }
 
 export default Todolist
+

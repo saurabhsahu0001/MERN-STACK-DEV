@@ -1,14 +1,15 @@
-import Navbar from '@/components/Navbar'
-import React from 'react'
+'use client',
+import React, { useState } from "react";
+import react, { useState } from "react";
 
-const Home = () => {
+
+function App() {
+  const [value, setValue] = useState(0)
   return (
-    <div>
-     
-    <h1 className='text-3xl text-center mt-5'>My Home Page</h1>
-    
-    </div>
-  )
-}
-
-export default Home;
+  <div className="App">
+  <div className= 'value'> [value]</div>
+  <button onClick={() => { setValue(value + 1)}}>Click me</button>
+  </div>
+  );
+  }
+  export default App;
